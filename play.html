@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Pocket Reserve · Play</title>
+    <meta
+      name="description"
+      content="You keep Cell 7, a bare floating island, and plant meadow, water and woodland until earthworms, frogs and otters come to stay. It is free with no sign-up."
+    />
+    <meta name="theme-color" content="#0e141c" />
+    <link rel="canonical" href="https://aapofoundation.github.io/pocket-reserve/play.html" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./landing/icon-180.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pocket Reserve" />
+    <meta property="og:url" content="https://aapofoundation.github.io/pocket-reserve/play.html" />
+    <meta property="og:title" content="Pocket Reserve · Play" />
+    <meta
+      property="og:description"
+      content="You keep Cell 7, a bare floating island, and plant meadow, water and woodland until earthworms, frogs and otters come to stay. It is free with no sign-up."
+    />
+    <meta property="og:image" content="https://aapofoundation.github.io/pocket-reserve/landing/og/og-v3.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The name Pocket Reserve beside a floating island in morning light, planted with meadow and reeds around two ponds."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pocket Reserve · Play" />
+    <meta
+      name="twitter:description"
+      content="You keep Cell 7, a bare floating island, and plant meadow, water and woodland until earthworms, frogs and otters come to stay. It is free with no sign-up."
+    />
+    <meta name="twitter:image" content="https://aapofoundation.github.io/pocket-reserve/landing/og/og-v3.jpg" />
+    <!-- The build line and the feedback address, read by the Chapters sheet (a token the build did not fill in reads as unset). -->
+    <meta name="pocket-reserve:build" content="2026-10-09 59af056" />
+    <meta name="pocket-reserve:feedback" content="https://x.com/StoRsi100" />
+    <!--
+      The entry card, painted before the game's own stylesheet arrives: the still from the landing behind it, the HUD's navy and brass on
+      it, a loading rule under its words. These rules are the card's only styling (styles.css has none for #intro), so what the first
+      frame shows is what the last one does. The tokens are the HUD's own values (src/styles.css, "RO2 h2").
+    -->
+    <style>
+      html, body { margin: 0; background: #0e141c; }
+      #intro { position: fixed; inset: 0; z-index: 40; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; isolation: isolate; font-family: 'Nunito Variable', 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #f6efe0; transition: opacity 0.5s ease; }
+      #intro.gone { opacity: 0; pointer-events: none; }
+      #intro[hidden] { display: none; }
+      #intro::before, #intro::after { content: ''; position: absolute; inset: 0; z-index: -1; transition: opacity 0.9s ease; }
+      #intro::before { background: #0e141c url(./landing/hero-v3/hero-1600.webp) 62% 56% / cover no-repeat; background-image: image-set(url(./landing/hero-v3/hero-1600.webp) 1x, url(./landing/hero-v3/hero-2400.webp) 2x); }
+      #intro::after { background: linear-gradient(180deg, rgba(7, 11, 16, 0.34), rgba(7, 11, 16, 0.64)); }
+      #intro[data-ready]::before { opacity: 0; }
+      #intro[data-ready]::after { opacity: 0.6; }
+      @media (max-width: 859px) { #intro::before { background-image: url(./landing/hero-v3/hero-m-1200.webp); } }
+      @media (max-width: 559px) { #intro::before { background-image: url(./landing/hero-v3/hero-m-780.webp); background-position: 50% 62%; } }
+      #intro.is-return .intro-inner { display: none; }
+      #intro .intro-inner {
+        --gold: linear-gradient(rgba(215, 181, 106, 0.8), rgba(215, 181, 106, 0.8));
+        position: relative; isolation: isolate; box-sizing: border-box; display: flex; flex-direction: column;
+        width: 100%; max-width: 560px; max-height: 100dvh; margin: 0; padding: 0; text-align: left;
+        color: #f6efe0; background-color: #0e141c;
+        background-image: var(--gold), var(--gold), var(--gold), var(--gold), var(--gold), var(--gold), var(--gold), var(--gold), linear-gradient(180deg, #1c2733 0%, #0e141c 46%, #0a0f15 100%);
+        background-size: 8px 1px, 1px 8px, 8px 1px, 1px 8px, 8px 1px, 1px 8px, 8px 1px, 1px 8px, 100% 100%;
+        background-position: left 5px top 5px, left 5px top 5px, right 5px top 5px, right 5px top 5px, left 5px bottom 5px, left 5px bottom 5px, right 5px bottom 5px, right 5px bottom 5px, 0 0;
+        background-repeat: no-repeat;
+        border: 1px solid #c8a86a; border-top-color: #f3e2b0; border-bottom-color: #6b4a0e; border-radius: 12px 12px 0 0;
+        box-shadow: inset 0 0 0 2px rgba(7, 11, 16, 0.78), inset 0 0 0 3px rgba(215, 181, 106, 0.3), 0 0 0 1px #8a6528, 0 0 0 2px #2a1d0a, 0 3px 6px rgba(0, 0, 0, 0.35), 0 14px 30px rgba(0, 0, 0, 0.5);
+        animation: intro-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+      #intro .intro-inner::before { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; opacity: 0.42; pointer-events: none; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch' result='t'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.96 0 0 0 0 0.9 0 0 0 0 0.74 0 0 0 1.1 -0.34' in='t'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+      #intro .intro-body { flex: 1 1 auto; min-height: 0; overflow: auto; padding: 22px 20px 6px; }
+      #intro .intro-kicker { display: block; font: 700 14px/1.2 'Cormorant Garamond', 'Palatino Linotype', Palatino, serif; letter-spacing: 0.06em; color: #f3e2b0; }
+      #intro h1 { margin: 6px 0 0; padding-bottom: 12px; font: 700 32px/0.98 'Cormorant Garamond', 'Palatino Linotype', Palatino, serif; font-variant-numeric: lining-nums; color: #f6efe0; background: linear-gradient(90deg, transparent, #d7b56a 15%, #f3e2b0 50%, #d7b56a 85%, transparent) 0 100% / 100% 1px no-repeat; }
+      #intro .intro-lead { margin: 14px 0 0; font: 600 16px/1.55 'Nunito Variable', 'Nunito', system-ui, sans-serif; color: #e8dcc4; }
+      #intro .intro-lead strong { color: #f3e2b0; }
+      #intro .intro-seed { margin: 12px 0 0; font: 700 14px/1.5 'Nunito Variable', 'Nunito', system-ui, sans-serif; color: #f3e2b0; }
+      #intro .intro-load { margin-top: 18px; }
+      #intro .intro-track { height: 3px; border-radius: 2px; overflow: hidden; background: rgba(215, 181, 106, 0.18); }
+      #intro .intro-track i { display: block; width: 100%; height: 100%; transform: scaleX(0.08); transform-origin: 0 50%; background: linear-gradient(90deg, #c8a86a, #f3e2b0); transition: transform 0.3s ease-out; }
+      #intro.is-wait .intro-track i { animation: intro-pulse 1.3s ease-in-out infinite; }
+      #intro .intro-status { margin: 8px 0 0; min-height: 19px; font: 600 13px/1.45 'Nunito Variable', 'Nunito', system-ui, sans-serif; font-variant-numeric: tabular-nums; color: #e8dcc4; }
+      #intro .intro-foot { flex: 0 0 auto; padding: 12px 20px calc(18px + env(safe-area-inset-bottom)); }
+      #intro #intro-start { display: block; box-sizing: border-box; width: 100%; min-height: 52px; margin: 0; padding: 13px 20px; font: 800 17px/1.2 'Nunito Variable', 'Nunito', system-ui, sans-serif; color: #1a1208; cursor: pointer; border: 1px solid #6b4a0e; border-top-color: #f6e6b4; border-radius: 12px; background-color: #c9a24f; background-image: linear-gradient(180deg, #ecd28a 0%, #c9a24f 52%, #b08a38 100%); box-shadow: inset 0 1px 0 rgba(255, 248, 220, 0.55), inset 0 -2px 0 rgba(90, 60, 10, 0.3), 0 1px 0 #2a1d0a, 0 3px 6px rgba(0, 0, 0, 0.4); text-shadow: 0 1px 0 rgba(255, 244, 205, 0.45); }
+      #intro #intro-start:hover:not(:disabled) { background-image: linear-gradient(180deg, #f3dd9a 0%, #d3ac58 52%, #b8923f 100%); }
+      #intro #intro-start:disabled { cursor: progress; filter: saturate(0.75) brightness(0.94); }
+      #intro #intro-start:focus-visible { outline: 2px solid #f3e2b0; outline-offset: 2px; }
+      #load-veil { position: fixed; z-index: 39; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; padding: 10px 16px; border-radius: 12px; border: 1px solid #8a6528; background: #0e141c; color: #f4ead8; font: 800 13px/1.3 'Nunito Variable', 'Nunito', system-ui, sans-serif; letter-spacing: 0.02em; white-space: nowrap; pointer-events: none; }
+      /* The veil stands under an open sheet (a briefing's title must stay readable), but over the still while it is up. */
+      #intro ~ #load-veil { z-index: 41; }
+      @keyframes intro-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+      @keyframes intro-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+      @media (min-width: 700px) and (min-height: 560px) {
+        #intro { align-items: center; justify-content: flex-start; padding-left: clamp(24px, 6vw, 96px); }
+        #intro .intro-inner { width: 520px; border-radius: 12px; }
+        #intro .intro-body { padding: 28px 32px 8px; }
+        #intro h1 { font-size: 40px; }
+        #intro .intro-foot { padding: 14px 32px 28px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #intro, #intro::before, #intro::after, #intro .intro-inner, #intro .intro-track i { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/play-BRv_CPEP.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-PPVm8Dsz.js">
+  </head>
+  <body>
+    <div id="stage"></div>
+    <button id="recentre" type="button" hidden aria-label="Recentre the view" title="Recentre the view (H). The red needle points north." style="position:fixed;z-index:8;pointer-events:auto;left:0;top:0;width:44px;height:44px;padding:0;border-radius:50%;border:2px solid #c8a86a;background:#0e141c;color:#f0dca8;font:22px/1 system-ui;cursor:pointer"><i style="position:absolute;left:15px;top:-3px;border:solid transparent;border-width:0 5px 9px;border-bottom-color:#e0523a;pointer-events:none"></i><svg class="rh-ic rh-ic-recentre" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5.8" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="1.9" fill="currentColor"/><path d="M12 2.4v3.2M12 18.4v3.2M2.4 12h3.2M18.4 12h3.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></button>
+    <div id="ui"></div>
+    <div id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title" aria-describedby="intro-lead">
+      <div class="intro-inner intro-ark">
+        <div class="intro-body">
+          <span class="intro-kicker">2052 · A message from Maris, Command</span>
+          <h1 id="intro-title">Cell 7 is yours</h1>
+          <p class="intro-lead" id="intro-lead">Cell 7 is bare rock at the edge of the Lumen shelf. The islands keep what was saved from the ground below until it can go home. Plant this island, and I will send what it can house and write down what stays. <strong>— M.</strong></p>
+          <p class="intro-seed" id="intro-keys" hidden>On a keyboard, Enter picks up a card or an animal, the arrow keys move between tiles and the I key takes you back to the island.</p>
+          <div class="intro-load">
+            <div class="intro-track" aria-hidden="true"><i id="intro-fill"></i></div>
+            <p class="intro-status" id="intro-status" role="status" aria-live="polite" aria-atomic="true">Loading the island…</p>
+          </div>
+        </div>
+        <div class="intro-foot">
+          <button id="intro-start" type="button" autofocus>Start planting</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // The entry card before the game has arrived. It lives here, ahead of the bundle, so the card is alive in the first frames: it
+      // paints the loader's count (src/entry-load.ts sends it as the document event pocket-reserve:load, and keeps it on window.__load),
+      // and it keeps a press of "Start planting" made before the game can answer it, which main.ts then takes (window.__startQueued).
+      (function () {
+        var d = document, card = d.getElementById('intro'), fill = d.getElementById('intro-fill'), say = d.getElementById('intro-status'), go = d.getElementById('intro-start');
+        if (!card || !fill || !say || !go) return;
+        var seen = 0.08, last = 0, timer = 0, returning = false;
+        try { returning = localStorage.getItem('pocket-reserve.intro-dismissed') === '1'; } catch (e) { /* storage may be blocked */ }
+        if (returning) {
+          // A returning player has no card to read: the still stands behind a one-line veil until the game takes over.
+          card.className = 'is-return';
+          var veil = d.createElement('div');
+          veil.id = 'load-veil';
+          veil.setAttribute('role', 'status');
+          veil.textContent = 'Loading your island…';
+          d.body.appendChild(veil);
+          return;
+        }
+        card.className = 'is-wait';
+        // The keyboard line is for a keyboard: it shows now where there is no touch, so the card does not grow when the game arrives
+        // (main.ts shows it on a touch screen once Tab or an arrow key is used).
+        var keys = d.getElementById('intro-keys');
+        if (keys && !(navigator.maxTouchPoints > 0)) keys.hidden = false;
+        function paint() {
+          timer = 0;
+          last = Date.now();
+          var L = window.__load;
+          if (!L) return;
+          if (L.total) card.classList.remove('is-wait');
+          if (L.total && L.loaded / L.total > seen) seen = L.loaded / L.total;
+          if (L.done) seen = 1;
+          fill.style.transform = 'scaleX(' + seen + ')';
+          say.textContent = L.done ? 'Island ready' : L.total ? 'Loading the island · ' + L.loaded + ' of ' + L.total : 'Loading the island…';
+          if (L.done) card.setAttribute('data-ready', '');
+        }
+        d.addEventListener('pocket-reserve:load', function () {
+          var wait = 250 - (Date.now() - last);
+          if (window.__load && window.__load.done) wait = 0;
+          if (wait <= 0) paint();
+          else if (!timer) timer = setTimeout(paint, wait);
+        });
+        // The card holds one control, so Tab and Shift+Tab stay on it (the game's own key handler takes over once it has arrived).
+        card.addEventListener('keydown', function (event) {
+          if (event.key === 'Tab') { event.preventDefault(); go.focus(); }
+        });
+        go.addEventListener('click', function () {
+          if (window.__introWired) return;
+          window.__startQueued = true;
+          go.disabled = true;
+          go.textContent = 'Opening chapter 1…';
+        });
+      })();
+    </script>
+    <main
+      data-webgl-fallback
+      hidden
+      style="max-width: 34rem; margin: 18vh auto; padding: 2rem; font: 700 1.1rem/1.6 system-ui, sans-serif; text-align: center"
+    >
+      This browser cannot draw the island, because Pocket Reserve needs WebGL. Open the page in a current browser with hardware acceleration switched on.
+    </main>
+  </body>
+</html>

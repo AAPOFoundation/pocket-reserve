@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pocket Reserve</title>
+    <meta
+      name="description"
+      content="Plant a bare floating island tile by tile until frogs, kingfishers and otters come to live there. It is free to play in your browser, with no sign-up."
+    />
+    <meta name="theme-color" content="#0e141c" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://aapofoundation.github.io/pocket-reserve/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./landing/icon-180.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pocket Reserve" />
+    <meta property="og:url" content="https://aapofoundation.github.io/pocket-reserve/" />
+    <meta property="og:title" content="Pocket Reserve · A habitat game set in 2052" />
+    <meta
+      property="og:description"
+      content="Plant a bare floating island tile by tile until frogs, kingfishers and otters come to live there. It is free to play in your browser, with no sign-up."
+    />
+    <meta property="og:image" content="https://aapofoundation.github.io/pocket-reserve/landing/og/og-v3.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The name Pocket Reserve beside a floating island in morning light, planted with meadow and reeds around two ponds."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pocket Reserve · A habitat game set in 2052" />
+    <meta
+      name="twitter:description"
+      content="Plant a bare floating island tile by tile until frogs, kingfishers and otters come to live there. It is free to play in your browser, with no sign-up."
+    />
+    <meta name="twitter:image" content="https://aapofoundation.github.io/pocket-reserve/landing/og/og-v3.jpg" />
+    <meta
+      name="twitter:image:alt"
+      content="The name Pocket Reserve beside a floating island in morning light, planted with meadow and reeds around two ponds."
+    />
+    <script>
+      // A browser with an island under way (a chapter begun, a chapter finished or more than the two opening tiles) is a returning
+      // player: the page shows the menu instead of the first-visit button before anything paints. The module then names the chapter.
+      try {
+        for (var i = 0; i < localStorage.length; i++) {
+          try {
+            var k = localStorage.key(i);
+            var v = /^pocket-reserve\.(island|campaign)(\.|$)/.test(k) && JSON.parse(localStorage.getItem(k));
+            if (v && (v.chapterStageId || (v.cleared || []).length || (v.pockets || []).filter(function (p) { return p.cardId; }).length > 2)) {
+              document.documentElement.setAttribute('data-returning', '');
+              break;
+            }
+          } catch (e) {}
+        }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/landing-Cb1GB51j.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-PPVm8Dsz.js">
+    <link rel="modulepreload" crossorigin href="./assets/species-BzZ85J_F.js">
+    <link rel="modulepreload" crossorigin href="./assets/landing-progress-AEAWqCqz.js">
+    <link rel="stylesheet" crossorigin href="./assets/species-G4ToChc6.css">
+    <link rel="stylesheet" crossorigin href="./assets/landing-GBtkpUF5.css">
+  </head>
+  <body data-page="landing">
+    <header class="site-topbar">
+      <a class="site-brand" href="#top" aria-label="Pocket Reserve, back to the top">
+        <span class="site-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" focusable="false"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M12 6.3c2.5 1.8 3.8 3.9 3.8 5.9A3.8 3.8 0 0 1 12 16a3.8 3.8 0 0 1-3.8-3.8c0-2 1.3-4.1 3.8-5.9z" fill="currentColor" /></svg>
+        </span>
+        <span class="site-name">Pocket Reserve</span>
+      </a>
+      <a class="site-channel" href="https://www.youtube.com/@TheNaturalistAtlas" rel="noopener">The Naturalist Atlas</a>
+    </header>
+
+    <main id="top">
+      <section class="landing-hero" aria-label="Pocket Reserve">
+        <picture class="hero-art" data-hero>
+          <source media="(max-width: 559px)" type="image/webp" srcset="./landing/hero-v3/hero-m-780.webp" />
+          <source media="(max-width: 859px)" type="image/webp" srcset="./landing/hero-v3/hero-m-1200.webp" />
+          <source type="image/webp" srcset="./landing/hero-v3/hero-1600.webp 1x, ./landing/hero-v3/hero-2400.webp 2x" />
+          <img
+            src="./landing/hero-v3/hero-1600.jpg"
+            width="1600"
+            height="1000"
+            fetchpriority="high"
+            decoding="async"
+            alt="A Pocket Reserve island in morning light: meadow, reeds and young trees around two ponds, with a kingfisher and an otter at the water."
+          />
+        </picture>
+
+        <div class="hero-panel h2-panel" data-hero-panel>
+          <p class="landing-kicker">A habitat game set in 2052</p>
+          <h1>Pocket Reserve</h1>
+          <p class="hero-lede">Plant a bare floating island tile by tile until frogs, kingfishers and otters come to live there.</p>
+
+          <div class="hero-actions" data-view-root>
+            <a class="btn btn-primary hero-cta" data-cta="play" href="play.html">
+              <span class="when-first">Plant the first seed</span>
+              <span class="when-returning" data-continue>
+                <span class="cta-line" data-continue-title>Continue your island</span>
+                <span class="cta-detail" data-continue-detail hidden></span>
+              </span>
+            </a>
+
+            <div class="menu" data-returning-only data-menu>
+              <a class="btn btn-ghost" data-menu-chapters href="play.html#chapters">Chapters</a>
+              <a class="btn btn-ghost" data-menu-reserve href="play.html#reserve" hidden>Open reserve</a>
+              <button class="btn btn-ghost btn-quiet" type="button" data-menu-new>Start a new island</button>
+              <div class="btn-pair">
+                <button class="btn btn-ghost btn-small" type="button" data-menu-save>Save to file</button>
+                <button class="btn btn-ghost btn-small" type="button" data-menu-load>Load from file</button>
+              </div>
+            </div>
+
+            <p class="save-note">The game is free with no sign-up, and your island saves in this browser as you go.</p>
+            <button class="link-btn" type="button" data-first-only data-menu-load>Load an island from a file</button>
+          </div>
+
+          <div class="confirm" data-confirm hidden role="dialog" aria-modal="false" aria-labelledby="confirm-title" tabindex="-1">
+            <h2 id="confirm-title" data-confirm-title tabindex="-1"></h2>
+            <p data-confirm-body></p>
+            <div class="confirm-actions" data-confirm-actions></div>
+          </div>
+          <p class="file-status" role="alert" data-file-status></p>
+          <input class="file-input" type="file" accept=".json,application/json" tabindex="-1" aria-hidden="true" data-file-input />
+        </div>
+
+        <section class="how-strip" aria-labelledby="how-title">
+          <h2 class="sr-only" id="how-title">What you do</h2>
+          <ol class="steps" data-steps>
+            <li class="h2-panel">
+              <span class="step-copy"><strong>Plant</strong><span>You begin on bare rock with eight seeds and a hand of cards: meadow, flowers, hedge, pond and reeds. Each seed plants one card on one tile.</span></span>
+            </li>
+            <li class="h2-panel">
+              <span class="step-copy"><strong>Invite</strong><span>Your Wildlife list shows which animals have a home ready. Choose one, then the tile it will live on, starting with an earthworm and a bumblebee.</span></span>
+            </li>
+            <li class="h2-panel">
+              <span class="step-copy"><strong>Connect</strong><span>Chapter by chapter you join the island up: meadow to meadow so the wind cannot lift it, reeds to water, and trout in the pond before a kingfisher will come to fish there.</span></span>
+            </li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="seed-line h2-panel" aria-labelledby="seed-line-title">
+        <div class="seed-preview" data-seed-preview role="img" aria-label="Ten seeds">
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+          <span class="seed-pip"></span>
+        </div>
+        <div class="seed-copy">
+          <p class="seed-pitch" data-pitch>In 2052 the ground below the cloud deck is ash-grey and slow to mend, and above it the floating islands of the Lumen shelf hold what was saved until it can go home. <strong>You keep Cell 7, the outermost island, which is bare rock where nothing has yet taken root.</strong> Twenty species are waiting for a home on it, from earthworms to otters, and all of them come from the meadows, fens and woods of Europe’s wet north-west.</p>
+          <h2 id="seed-line-title">Every seed is a choice about which animal gets a home.</h2>
+          <p data-living-note>
+            Each chapter gives you a handful of seeds, enough for careful work and never enough for waste. An animal needs its whole home at once, the ground it lives on and the cover, water or flowers beside it, so a seed in the wrong place can leave an animal with nowhere to settle.
+          </p>
+          <p class="seed-note-quiet">The story so far has twenty-five chapters in two acts, The First Green and Wet Country, and each one opens with a message from someone else on the Lumen shelf.</p>
+        </div>
+      </section>
+
+      <section class="species-section" aria-labelledby="species-title">
+        <div class="species-heading">
+          <div>
+            <p class="section-kicker">The twenty species</p>
+            <h2 id="species-title">Each one needs what it would need in the wild.</h2>
+          </div>
+          <p>An earthworm asks only for soft ground and a frog for water with meadow beside it, while a kingfisher wants clear water, a branch to watch from, a bank to tunnel into and fish within reach before it will stay.</p>
+        </div>
+        <div class="species-strip-shell" data-species-overflow>
+          <div
+            class="species-track"
+            data-species-strip
+            role="region"
+            tabindex="0"
+            aria-label="Twenty species; scroll to meet them all"
+            aria-describedby="species-overflow-hint"
+          ></div>
+          <p class="species-overflow-hint" id="species-overflow-hint">Scroll sideways to meet all twenty species.</p>
+        </div>
+      </section>
+
+      <section class="play-free h2-panel" aria-labelledby="play-free-title">
+        <h2 id="play-free-title">Play in this browser.</h2>
+        <p data-publish-note>
+          There is nothing to download. From your first tap you hear wind over the island, water where you have dug it, a few plucked notes and each animal as it settles, and the Sound button turns all of it off.
+        </p>
+        <a class="btn btn-ghost play-cta-secondary" href="play.html">Go to the island</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-by">
+          <span>A habitat game by</span>
+          <a href="https://www.youtube.com/@TheNaturalistAtlas" rel="noopener">The Naturalist Atlas</a>
+        </p>
+        <p class="footer-eco">Species and habitat rules drawn from the field ecology of Europe’s wet north-west.</p>
+        <p class="footer-save">Your island stays in this browser and is never sent anywhere, so Save to file is how to keep a copy.</p>
+        <ul class="footer-links">
+          <li><a href="./THIRD-PARTY-NOTICES.txt">Credits and licences</a></li>
+          <li data-feedback-item hidden><a data-feedback href="https://x.com/StoRsi100" rel="noopener">Send feedback</a></li>
+          <li class="footer-build" data-build="2026-10-09 59af056"></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
