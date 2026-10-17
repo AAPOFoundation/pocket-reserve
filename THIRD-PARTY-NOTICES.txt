@@ -1,0 +1,383 @@
+Pocket Reserve: third-party notices
+==============================================================================
+
+Pocket Reserve is a browser game by The Naturalist Atlas. This file lists the
+software, fonts and recorded sounds in the game that are the work of others,
+with the licence each is used under, and then says how the artwork was made and
+who holds the rights in the game. It is served beside the game at
+THIRD-PARTY-NOTICES.txt.
+
+==============================================================================
+1. SOFTWARE
+==============================================================================
+
+three.js 0.185.1  (MIT licence)  https://threejs.org  https://github.com/mrdoob/three.js
+Bundled into the game's scripts. The three.js add-ons used are GLTFLoader,
+SkeletonUtils, BufferGeometryUtils, OrbitControls and the postprocessing
+passes (EffectComposer, RenderPass, ShaderPass, UnrealBloomPass, OutputPass).
+
+The MIT License
+
+Copyright © 2010-2026 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------
+
+meshoptimizer decoder, as shipped in three.js 0.185.1 (examples/jsm/libs/meshopt_decoder.module.js)
+(MIT licence)  https://github.com/zeux/meshoptimizer
+Bundled into the game's model-loading script; it decodes the compressed 3D models.
+
+The MIT License
+
+Copyright (C) 2016-2026, by Arseny Kapoulkine (arseny.kapoulkine@gmail.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+==============================================================================
+2. FONTS
+==============================================================================
+
+Both families are used under the SIL Open Font License, Version 1.1, and are
+served as the Fontsource packages' WOFF and WOFF2 files, unmodified apart from
+the format conversion and the Latin, Cyrillic and Vietnamese subsetting those
+packages make. The licence text is printed once, below the two notices.
+
+Nunito (variable weight), Fontsource package @fontsource-variable/nunito 5.3.0
+https://fonts.google.com/specimen/Nunito
+Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito) Nunito-Italic[wght].ttf: Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+Cormorant Garamond (weights 600 and 700), Fontsource package @fontsource/cormorant-garamond 5.3.0
+https://fonts.google.com/specimen/Cormorant+Garamond
+Copyright 2015 The Cormorant Project Authors (github.com/CatharsisFonts/Cormorant) CormorantGaramond-Italic[wght].ttf: Copyright 2015 The Cormorant Project Authors (github.com/CatharsisFonts/Cormorant)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+==============================================================================
+3. RECORDED SOUNDS (22 clips)
+==============================================================================
+
+Every recorded sound in the game is a free-licence recording. Each clip below
+is an edited excerpt: the recording was cut, filtered, levelled and encoded for
+the game by tools/audio/build-audio.py, and the edit is stated on each entry.
+Licence deeds: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/ ,
+CC BY 3.0 https://creativecommons.org/licenses/by/3.0/ ,
+CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ ,
+CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/ .
+The clips marked public domain carry the Wikimedia Commons public-domain
+template named on their source page. The warranty disclaimers of the licences
+apply. The same list appears in the game under Chapters, "Sound credits".
+
+Share-alike. The five recordings licensed CC BY-SA 4.0 (badger, kingfisher,
+lapwing, curlew, reed bunting) were edited for the game. The five edited clips
+(badger.mp3, kingfisher.mp3, lapwing.mp3, curlew.mp3, reed-bunting.mp3 under
+assets/audio/) are adaptations and are offered under CC BY-SA 4.0
+(https://creativecommons.org/licenses/by-sa/4.0/), with the credit given here.
+They are ordinary files that anyone may download and reuse on those terms. The
+game's code, models, images and its other sounds are separate works that
+include these clips by playing them; they are not adaptations of them and keep
+their own terms.
+
+badger.mp3  (Badger call)
+  Title:    European Badger (Meles meles) (W1CDR0001490 BD4)
+  Author:   Aubrey John Williams (recordist, 24 Feb 1975) (British Library; (c) The British Library Board)
+  Source:   https://commons.wikimedia.org/wiki/File:European_Badger_(Meles_meles)_(W1CDR0001490_BD4).ogg
+  Licence:  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+  Changes:  cut to 3.74 to 5.14 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+  Share-alike: this edited clip is an adaptation and stays under CC BY-SA 4.0.
+
+otter.mp3  (Otter call)
+  Title:    Eurasian otter (captive), iNaturalist observation 188752225, sound 836069
+  Author:   Patrascu Lucian-Marius
+  Source:   https://www.inaturalist.org/observations/188752225
+  Licence:  CC0 1.0  https://creativecommons.org/publicdomain/zero/1.0
+  Changes:  cut to 3.87 to 6.53 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+
+hedgehog.mp3  (Hedgehog huffing)
+  Title:    Hedgehogs mating, iNaturalist observation 264709374, sound 1328127
+  Author:   Justin Cormack
+  Source:   https://www.inaturalist.org/observations/264709374
+  Licence:  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+  Changes:  cut to 0.07 to 2.26 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+
+kingfisher.mp3  (Kingfisher call)
+  Title:    Alcedo atthis - Common Kingfisher XC476785
+  Author:   Marie-Lan Taÿ Pamart
+  Source:   https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-_Common_Kingfisher_XC476785.mp3
+  Licence:  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+  Changes:  cut to 4.13 to 5.93 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+  Share-alike: this edited clip is an adaptation and stays under CC BY-SA 4.0.
+
+lapwing.mp3  (Lapwing call)
+  Title:    Northern Lapwing (Vanellus vanellus) (W1CDR0001471 BD4)
+  Author:   Aubrey John Williams (recordist, 13 Apr 1980) (British Library; (c) The British Library Board)
+  Source:   https://commons.wikimedia.org/wiki/File:Northern_Lapwing_(Vanellus_vanellus)_(W1CDR0001471_BD4).ogg
+  Licence:  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+  Changes:  cut to 22.73 to 24.70 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+  Share-alike: this edited clip is an adaptation and stays under CC BY-SA 4.0.
+
+curlew.mp3  (Curlew call)
+  Title:    Numenius arquata - Eurasian Curlew XC466469
+  Author:   Pascal Christe
+  Source:   https://commons.wikimedia.org/wiki/File:Numenius_arquata_-_Eurasian_Curlew_XC466469.mp3
+  Licence:  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+  Changes:  cut to 3.50 to 7.00 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+  Share-alike: this edited clip is an adaptation and stays under CC BY-SA 4.0.
+
+little-owl.mp3  (Little owl call)
+  Title:    Steinkauz
+  Author:   Rabe19 (Diskussion)
+  Source:   https://commons.wikimedia.org/wiki/File:Steinkauz.OGG
+  Licence:  Public domain (PD-release)  see the licence section of the source page
+  Changes:  cut to 51.51 to 52.72 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+
+reed-bunting.mp3  (Reed bunting song)
+  Title:    Emberiza schoeniclus - Common Reed Bunting XC552170
+  Author:   Tommy Andriollo
+  Source:   https://commons.wikimedia.org/wiki/File:Emberiza_schoeniclus_-_Common_Reed_Bunting_XC552170.mp3
+  Licence:  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+  Changes:  cut to 18.61 to 20.71 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+  Share-alike: this edited clip is an adaptation and stays under CC BY-SA 4.0.
+
+frog.mp3  (Common frog call)
+  Title:    Grasfrosch Paarungsrufe
+  Author:   Rabe19 (Diskussion)
+  Source:   https://commons.wikimedia.org/wiki/File:Grasfrosch_Paarungsrufe.OGG
+  Licence:  Public domain (PD-release)  see the licence section of the source page
+  Changes:  cut to 15.45 to 18.54 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+
+toad.mp3  (Common toad call)
+  Title:    Common Toad (Bufo bufo) (W BUFO BUFO R3 C2)
+  Author:   Eric Nobles (recordist, 19 Mar 1989) (British Library; (c) The British Library Board)
+  Source:   https://commons.wikimedia.org/wiki/File:Common_Toad_(Bufo_bufo)_(W_BUFO_BUFO_R3_C2).ogg
+  Licence:  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+  Changes:  cut to 13.59 to 14.94 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+
+bumblebee.mp3  (Bumblebee buzz)
+  Title:    Bombus buzz
+  Author:   Mysid
+  Source:   https://commons.wikimedia.org/wiki/File:Bombus_buzz.ogg
+  Licence:  Public domain (PD-self)  see the licence section of the source page
+  Changes:  cut to 3.42 to 6.59 s of the source; band-pass filtered around the call, short fades in and out, levelled to about -20 LUFS under a -2 dBFS peak limit; encoded to mono 44.1 kHz MP3.
+
+plop.mp3  (Water plop (water vole, newt, brown trout))
+  Title:    Jump into Water (Gravity Sound)
+  Author:   Gravity Sound
+  Source:   https://commons.wikimedia.org/wiki/File:Jump_into_Water_(Gravity_Sound).mp3
+  Licence:  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+  Changes:  cut to 0.07 to 0.97 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+swipe.mp3  (Grass swipe (grass snake, harvest mouse))
+  Title:    Swipe tall grass once (Gravity Sound)
+  Author:   Gravity Sound
+  Source:   https://commons.wikimedia.org/wiki/File:Swipe_tall_grass_once_(Gravity_Sound).wav
+  Licence:  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+  Changes:  cut to 0.00 to 1.48 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+rustle.mp3  (Leaf rustle (earthworm, woodland and scrub planting))
+  Title:    Rustling leaves (Gravity Sound)
+  Author:   Gravity Sound
+  Source:   https://commons.wikimedia.org/wiki/File:Rustling_leaves_(Gravity_Sound).wav
+  Licence:  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+  Changes:  cut to 6.20 to 7.40 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+dig.mp3  (Digging (meadow and bare ground planting))
+  Title:    Shovel Sound (OpenGameArt, shovel_0.ogg)
+  Author:   themightyglider
+  Source:   https://opengameart.org/content/shovel-sound
+  Licence:  CC0  https://creativecommons.org/publicdomain/zero/1.0
+  Changes:  cut to 0.00 to 0.88 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+splash.mp3  (Splash (water and wetland planting))
+  Title:    Water Splash and sand footsteps (OpenGameArt, splash1_0.wav)
+  Author:   Peludo
+  Source:   https://opengameart.org/content/water-splash-and-sand-footsteps
+  Licence:  CC0  https://creativecommons.org/publicdomain/zero/1.0
+  Changes:  cut to 0.52 to 1.22 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+stone.mp3  (Stone knock (rock and shore planting))
+  Title:    Rocks hitting together (Gravity Sound)
+  Author:   Gravity Sound
+  Source:   https://commons.wikimedia.org/wiki/File:Rocks_hitting_together_(Gravity_Sound).wav
+  Licence:  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+  Changes:  cut to 2.37 to 3.07 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+wood.mp3  (Wooden knock (woodland planting))
+  Title:    Knocking on wood or door
+  Author:   stephan
+  Source:   https://commons.wikimedia.org/wiki/File:Knocking_on_wood_or_door.ogg
+  Licence:  Public domain (PD-author)  see the licence section of the source page
+  Changes:  cut to 4.40 to 4.70 s of the source; 80 Hz high-pass, short fades in and out, levelled; encoded to mono 44.1 kHz MP3.
+
+stream.mp3  (Stream bed (open water))
+  Title:    2024-07-26 Molln (Oberösterreich) Bachlauf plätschert (Krumme Steyerling bei Piesslingerstraße)
+  Author:   DrTrumpet
+  Source:   https://commons.wikimedia.org/wiki/File:2024-07-26_Molln_(Ober%C3%B6sterreich)_Bachlauf_pl%C3%A4tschert_(Krumme_Steyerling_bei_Piesslingerstra%C3%9Fe).wav
+  Licence:  CC0  https://creativecommons.org/publicdomain/zero/1.0
+  Changes:  cut to 0.00 to 26.50 s of the source and made into a seamless loop (cross-faded end into start); levelled and encoded to mono 44.1 kHz MP3.
+
+marsh.mp3  (Marsh bed (reeds and wetland))
+  Title:    Moerasvogels in de Zouweboezem - SoundCloud - luc de bruijn
+  Author:   luc de bruijn
+  Source:   https://commons.wikimedia.org/wiki/File:Moerasvogels_in_de_Zouweboezem_-_SoundCloud_-_luc_de_bruijn.ogg
+  Licence:  CC BY 3.0  https://creativecommons.org/licenses/by/3.0
+  Changes:  cut to 144.00 to 176.50 s of the source and made into a seamless loop (cross-faded end into start); levelled and encoded to mono 44.1 kHz MP3.
+
+dawn.mp3  (Dawn chorus bed (woodland, morning))
+  Title:    Gentle breeze and birds singing
+  Author:   ezwa
+  Source:   https://commons.wikimedia.org/wiki/File:Gentle_breeze_and_birds_singing.ogg
+  Licence:  Public domain (PD-author)  see the licence section of the source page
+  Changes:  cut to 0.00 to 32.50 s of the source and made into a seamless loop (cross-faded end into start); levelled and encoded to mono 44.1 kHz MP3.
+
+night.mp3  (Heath night bed (night))
+  Title:    Nachtzwaluw in Drenthe - SoundCloud - luc de bruijn
+  Author:   luc de bruijn
+  Source:   https://commons.wikimedia.org/wiki/File:Nachtzwaluw_in_Drenthe_-_SoundCloud_-_luc_de_bruijn.ogg
+  Licence:  CC BY 3.0  https://creativecommons.org/licenses/by/3.0
+  Changes:  cut to 0.00 to 32.50 s of the source and made into a seamless loop (cross-faded end into start); levelled and encoded to mono 44.1 kHz MP3.
+
+==============================================================================
+4. ARTWORK MADE WITH SI IMAGE TOOLS
+==============================================================================
+
+The ground and plant textures, the habitat card illustrations and the chapter
+illustrations were made with SI (Super Intelligence) image generation tools by
+the game's author and edited for the game. The card and chapter illustrations
+were made with Grok (xAI). The animals and the habitat objects in the 3D scene
+are modelled for the game. No stock or purchased 3D models are in the published
+game.
+
+==============================================================================
+5. THE GAME
+==============================================================================
+
+© 2026 The Naturalist Atlas. All rights reserved. The game's code, models,
+images, text and its other sounds are the work of The Naturalist Atlas. The
+software, fonts and recorded sounds listed above keep the licences given with
+them.
