@@ -1,0 +1,1 @@
+const r=/\p{Extended_Pictographic}️?(?:‍\p{Extended_Pictographic}️?)*/gu,t=/[\u2713\u2714]\uFE0F?/g;function a(e){return`<span aria-hidden="true">${e}</span>`}function c(e){return e.replace(r,"").replace(t,"").replace(/ {2,}/g," ").replace(/ ([.,!?;:])/g,"$1").trim()}function p(e){return e.replace(r,n=>a(n))}export{a as d,c as p,p as q};
