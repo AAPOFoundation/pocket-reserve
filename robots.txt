@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aapofoundation.github.io/pocket-reserve/sitemap.xml
