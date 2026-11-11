@@ -8,25 +8,25 @@
       name="description"
       content="Grow your own little nature reserve in the sky, one tile at a time, until frogs, kingfishers and otters move in. Free to play in your browser, no sign-up needed!"
     />
-    <meta name="theme-color" content="#0e141c" />
+    <meta name="theme-color" content="#1f2a44" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Pocket Reserve" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="color-scheme" content="dark" />
-    <link rel="canonical" href="https://aapofoundation.github.io/pocket-reserve/" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://pocketreservegame.com/" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-180.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Pocket Reserve" />
-    <meta property="og:url" content="https://aapofoundation.github.io/pocket-reserve/" />
+    <meta property="og:url" content="https://pocketreservegame.com/" />
     <meta property="og:title" content="Pocket Reserve · Grow a nature reserve in the sky" />
     <meta
       property="og:description"
       content="Grow your own little nature reserve in the sky, one tile at a time, until frogs, kingfishers and otters move in. Free to play in your browser, no sign-up needed!"
     />
-    <meta property="og:image" content="https://aapofoundation.github.io/pocket-reserve/landing/og/og-v4.jpg" />
+    <meta property="og:image" content="https://pocketreservegame.com/landing/og/og-v4.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
@@ -39,7 +39,7 @@
       name="twitter:description"
       content="Grow your own little nature reserve in the sky, one tile at a time, until frogs, kingfishers and otters move in. Free to play in your browser, no sign-up needed!"
     />
-    <meta name="twitter:image" content="https://aapofoundation.github.io/pocket-reserve/landing/og/og-v4.jpg" />
+    <meta name="twitter:image" content="https://pocketreservegame.com/landing/og/og-v4.jpg" />
     <meta
       name="twitter:image:alt"
       content="The words Pocket Reserve next to a floating island in the morning light, full of meadow and reeds around two ponds."
@@ -60,17 +60,16 @@
         }
       } catch (e) {}
     </script>
-    <script type="module" crossorigin src="./assets/landing-BNFYGatu.js"></script>
+    <script type="module" crossorigin src="./assets/landing-DTWx5BO4.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-PPVm8Dsz.js">
     <link rel="modulepreload" crossorigin href="./assets/species-facts-DDv1cfGy.js">
-    <link rel="modulepreload" crossorigin href="./assets/chapters-B4b8Qphj.js">
+    <link rel="modulepreload" crossorigin href="./assets/species-DNYeh2tY.js">
     <link rel="modulepreload" crossorigin href="./assets/chapter-index-OOW1BeJc.js">
-    <link rel="modulepreload" crossorigin href="./assets/act-icons-5JIv2Gtc.js">
-    <link rel="modulepreload" crossorigin href="./assets/home-screen-gHyKpj8k.js">
-    <link rel="modulepreload" crossorigin href="./assets/new-chapters-hdes_o6f.js">
-    <link rel="stylesheet" crossorigin href="./assets/landing-CqFsCztV.css">
-    <link rel="stylesheet" crossorigin href="./assets/index-G4ToChc6.css">
+    <link rel="modulepreload" crossorigin href="./assets/act-icons-DDyFkjP3.js">
+    <link rel="modulepreload" crossorigin href="./assets/home-screen-BuK7Ndad.js">
+    <link rel="modulepreload" crossorigin href="./assets/new-chapters-TkaRcYHC.js">
+    <link rel="stylesheet" crossorigin href="./assets/landing-B-sRlOA-.css">
   </head>
   <body data-page="landing">
     <header class="site-topbar">
@@ -100,7 +99,7 @@
         </picture>
 
         <div class="hero-panel h2-panel" data-hero-panel>
-          <p class="landing-kicker">A cosy nature game in the sky</p>
+          <p class="landing-kicker">A cosy nature game from The Naturalist Atlas</p>
           <h1>Pocket Reserve</h1>
           <p class="hero-lede">Your own little nature reserve, floating in the sky. Plant it tile by tile until frogs, kingfishers and otters move in.</p>
 
@@ -123,8 +122,8 @@
               </div>
             </div>
 
-            <p class="save-note">It’s free, with no sign-up. Your island saves in this browser as you play.</p>
-            <div class="a2hs-slot" data-a2hs hidden></div>
+            <p class="save-note">It's free, with no sign-up. Your island saves in this browser as you play.</p>
+            <p class="trust-line">For ages 7 to 10. No adverts, no purchases, no account, and nothing is collected.</p>
             <button class="link-btn" type="button" data-first-only data-menu-load>Load an island from a file</button>
           </div>
 
@@ -153,7 +152,33 @@
         </section>
       </section>
 
+      <div class="a2hs-slot home-screen-slot" data-a2hs hidden></div>
+
+      <section class="landing-demo h2-panel" data-landing-demo aria-labelledby="demo-title">
+        <h2 id="demo-title">Try it: plant your first tiles</h2>
+        <div class="demo-seeds">
+          <span data-demo-seeds>3 seeds</span>
+          <span class="seed-pip" aria-hidden="true"></span>
+          <span class="seed-pip" aria-hidden="true"></span>
+          <span class="seed-pip" aria-hidden="true"></span>
+        </div>
+        <div class="demo-hand" role="group" aria-label="Pick a card">
+          <button class="demo-card" type="button" data-demo-card="meadow" aria-pressed="false"><span class="demo-swatch" aria-hidden="true"></span>Meadow</button>
+          <button class="demo-card" type="button" data-demo-card="flowers" aria-pressed="false"><span class="demo-swatch" aria-hidden="true"></span>Flowers</button>
+        </div>
+        <div class="demo-island" role="group" aria-label="Five island tiles">
+          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 1: bare rock"><span aria-hidden="true">1</span></button>
+          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 2: bare rock"><span aria-hidden="true">2</span></button>
+          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 3: bare rock"><span aria-hidden="true">3</span></button>
+          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 4: bare rock"><span aria-hidden="true">4</span></button>
+          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 5: bare rock"><span aria-hidden="true">5</span></button>
+        </div>
+        <p class="demo-live" aria-live="polite" aria-atomic="true">Pick a card, then tap a tile.</p>
+        <button class="link-btn demo-reset" type="button" data-demo-reset hidden>Start again</button>
+      </section>
+
       <section class="seed-line h2-panel" aria-labelledby="seed-line-title">
+        <h2 id="seed-line-title">Every seed can help an animal find a home.</h2>
         <div class="seed-preview" data-seed-preview role="img" aria-label="Ten seeds">
           <span class="seed-pip"></span>
           <span class="seed-pip"></span>
@@ -167,8 +192,7 @@
           <span class="seed-pip"></span>
         </div>
         <div class="seed-copy">
-          <p class="seed-pitch" data-pitch>It’s 2052. Far below the clouds, the Earth is resting and slowly getting better. Up above, the floating islands of the Lumen shelf look after plants and animals until they can go home. <strong>You look after Cell 7, the furthest island out: bare rock, just waiting for its first green shoots.</strong> Twenty animals are hoping to move in, from earthworms to otters, all from the meadows, wetlands and woods of Europe’s rainy north-west.</p>
-          <h2 id="seed-line-title">Every seed can help an animal find a home.</h2>
+          <p class="seed-pitch" data-pitch>It’s 2052. Far below the clouds, the Earth is resting and slowly getting better. Up above, the floating islands of the Lumen shelf look after plants and animals until they can go home. <strong>You look after Cell 7, the furthest island out: bare rock, just waiting for its first green shoots.</strong> <span data-species-count-cap>Twenty-six</span> animals are hoping to move in, from earthworms to otters, all from the meadows, wetlands and woods of Europe’s rainy north-west.</p>
           <p data-living-note>
             Each chapter gives you a handful of seeds: enough if you plan, but not enough to waste. An animal needs its whole home at once, the ground it lives on plus the cover, water or flowers next to it. A seed in the wrong spot can leave an animal without a home, so think before you plant!
           </p>
@@ -182,10 +206,19 @@
       <section class="species-section" aria-labelledby="species-title">
         <div class="species-heading">
           <div>
-            <p class="section-kicker">Meet the twenty animals</p>
+            <p class="section-kicker">Meet the <span data-species-count>twenty-six</span> animals</p>
             <h2 id="species-title">Each one needs a home just like in the wild.</h2>
           </div>
-          <p>An earthworm only asks for soft ground. A frog wants water with meadow next to it. A kingfisher is fussier: clear water, a branch to watch from, a bank to dig into and fish close by, or it’s off!</p>
+          <p class="species-intro">An earthworm only asks for soft ground. A frog wants water with meadow next to it. A kingfisher is fussier: clear water, a branch to watch from, a bank to dig into and fish close by, or it’s off!</p>
+          <p class="species-overflow-hint" id="species-overflow-hint"><span data-species-count-cap>Twenty-six</span> animals. <span class="species-hint-fine">Use the arrows or scroll sideways to meet them all.</span><span class="species-hint-touch">Swipe sideways to meet them all.</span></p>
+          <div class="species-controls" role="group" aria-label="Browse animals">
+            <button type="button" class="species-arrow species-prev" data-species-prev aria-label="Earlier animals" hidden>
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+            <button type="button" class="species-arrow species-next" data-species-next aria-label="More animals" hidden>
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+          </div>
         </div>
         <div class="species-strip-shell" data-species-overflow>
           <div
@@ -193,11 +226,20 @@
             data-species-strip
             role="region"
             tabindex="0"
-            aria-label="Twenty animals: scroll to meet them all"
+            aria-label="Twenty-six animals: scroll to meet them all"
             aria-describedby="species-overflow-hint"
           ></div>
-          <p class="species-overflow-hint" id="species-overflow-hint">Scroll sideways to meet all twenty animals.</p>
         </div>
+      </section>
+
+      <section class="grown-ups h2-panel" aria-labelledby="grown-ups-title">
+        <h2 id="grown-ups-title">For grown-ups</h2>
+        <ul>
+          <li><strong>What children practise.</strong> Planning ahead with a few seeds, and learning what each animal needs to live: the right ground, with water, cover or flowers next to it.</li>
+          <li><strong>Short sessions.</strong> The story comes in small chapters and the island saves by itself, so it is easy to stop and come back later.</li>
+          <li><strong>Sound.</strong> The game plays wind, water, a little music and animal calls from the first tap. The Sound button in the game turns it all off.</li>
+          <li><strong>Privacy.</strong> No adverts, no purchases, no account and no tracking. The game collects nothing. The island is saved only in this browser and is never sent anywhere. Save to file makes a copy for you to keep.</li>
+        </ul>
       </section>
 
       <section class="play-free h2-panel" aria-labelledby="play-free-title">
@@ -205,7 +247,10 @@
         <p data-publish-note>
           Nothing to download! From your first tap you’ll hear the wind, splashing water, a little music and every animal as it moves in. The Sound button turns it all off.
         </p>
-        <a class="btn btn-ghost play-cta-secondary" href="play.html">Go to the island</a>
+        <a class="btn btn-ghost play-cta-secondary" href="play.html">
+          <span class="when-first">Plant your first seed</span>
+          <span class="when-returning">Back to my island</span>
+        </a>
       </section>
     </main>
 
@@ -220,7 +265,7 @@
         <ul class="footer-links">
           <li><a href="./THIRD-PARTY-NOTICES.txt">Credits and licences</a></li>
           <li data-feedback-item hidden><a data-feedback href="https://x.com/PocketReserve" target="_blank" rel="noopener noreferrer">Send feedback</a></li>
-          <li class="footer-build" data-build="2026-11-09 15622c2"></li>
+          <li class="footer-build" data-build="2026-11-12 33b9ed8"></li>
         </ul>
       </div>
     </footer>
