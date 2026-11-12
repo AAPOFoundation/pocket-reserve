@@ -60,7 +60,7 @@
         }
       } catch (e) {}
     </script>
-    <script type="module" crossorigin src="./assets/landing-DTWx5BO4.js"></script>
+    <script type="module" crossorigin src="./assets/landing-FQkyYYfT.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-PPVm8Dsz.js">
     <link rel="modulepreload" crossorigin href="./assets/species-facts-DDv1cfGy.js">
@@ -69,37 +69,72 @@
     <link rel="modulepreload" crossorigin href="./assets/act-icons-DDyFkjP3.js">
     <link rel="modulepreload" crossorigin href="./assets/home-screen-BuK7Ndad.js">
     <link rel="modulepreload" crossorigin href="./assets/new-chapters-TkaRcYHC.js">
-    <link rel="stylesheet" crossorigin href="./assets/landing-B-sRlOA-.css">
+    <link rel="stylesheet" crossorigin href="./assets/landing-RolCu3bK.css">
   </head>
   <body data-page="landing">
     <header class="site-topbar">
-      <a class="site-brand" href="#top" aria-label="Pocket Reserve, back to the top">
+      <a class="site-brand" href="#top" aria-label="Pocket Reserve home">
         <span class="site-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="18" height="18" focusable="false"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M12 6.3c2.5 1.8 3.8 3.9 3.8 5.9A3.8 3.8 0 0 1 12 16a3.8 3.8 0 0 1-3.8-3.8c0-2 1.3-4.1 3.8-5.9z" fill="currentColor" /></svg>
         </span>
-        <span class="site-name">Pocket Reserve</span>
       </a>
-      <a class="site-channel" href="https://www.youtube.com/@TheNaturalistAtlas" rel="noopener">The Naturalist Atlas</a>
     </header>
 
     <main id="top">
       <section class="landing-hero" aria-label="Pocket Reserve">
-        <picture class="hero-art" data-hero>
-          <source media="(max-width: 559px)" type="image/webp" srcset="./landing/hero-v3/hero-m-780.webp" />
-          <source media="(max-width: 859px)" type="image/webp" srcset="./landing/hero-v3/hero-m-1200.webp" />
-          <source type="image/webp" srcset="./landing/hero-v3/hero-1600.webp 1x, ./landing/hero-v3/hero-2400.webp 2x" />
-          <img
-            src="./landing/hero-v3/hero-1600.jpg"
-            width="1600"
-            height="1000"
-            fetchpriority="high"
-            decoding="async"
-            alt="A Pocket Reserve island in the morning light: meadow, reeds and young trees around two ponds, with a kingfisher and an otter by the water."
-          />
-        </picture>
+        <div class="hero-island">
+          <picture class="hero-art" data-hero>
+            <source media="(max-width: 559px)" type="image/webp" srcset="./landing/hero-v4/island-poster-780.webp" />
+            <source type="image/webp" srcset="./landing/hero-v4/island-poster.webp" />
+            <img
+              src="./landing/hero-v4/island-poster.jpg"
+              width="1280"
+              height="720"
+              fetchpriority="high"
+              decoding="async"
+              alt="A floating Pocket Reserve island with meadows, trees and ponds above the clouds."
+            />
+          </picture>
+          <video class="hero-video" data-hero-video muted loop playsinline aria-hidden="true" preload="none"></video>
 
-        <div class="hero-panel h2-panel" data-hero-panel>
-          <p class="landing-kicker">A cosy nature game from The Naturalist Atlas</p>
+          <div class="hero-brand h2-panel" data-hero-plate>
+            <span class="hero-brand-name">Your seeds</span>
+            <div class="hero-seed-pips" aria-hidden="true">
+              <span data-hero-pip></span><span data-hero-pip></span><span data-hero-pip></span>
+            </div>
+            <span class="hero-seeds" data-hero-seeds>Seeds 3 of 3</span>
+          </div>
+
+          <section class="hero-goals h2-panel" data-hero-plate aria-labelledby="hero-goals-title">
+            <div class="hero-goals-heading">
+              <h2 id="hero-goals-title" data-initial-heading="Try it here · three animals are waiting"><span data-hero-heading>Try it here · three animals are waiting</span></h2>
+              <span class="hero-seeds hero-goals-seeds" data-hero-seeds>Seeds 3 of 3</span>
+            </div>
+            <ul>
+              <li data-hero-goal="tussocks"><span class="hero-goal-box" aria-hidden="true"></span><span>Earthworm</span><span data-goal-count>0 of 1</span></li>
+              <li data-hero-goal="nectar"><span class="hero-goal-box" aria-hidden="true"></span><span>Bumblebee</span><span data-goal-count>0 of 1</span></li>
+              <li data-hero-goal="pond"><span class="hero-goal-box" aria-hidden="true"></span><span>Frog</span><span data-goal-count>0 of 1</span></li>
+            </ul>
+          </section>
+
+          <div class="hero-arrivals" aria-label="Animals that moved in" role="group">
+            <div class="hero-badge" data-hero-badge="tussocks" hidden>
+              <img data-portrait="earthworm" width="96" height="96" alt="" />
+              <span class="hero-badge-label">Earthworm <b>+3</b></span>
+            </div>
+            <div class="hero-badge" data-hero-badge="nectar" hidden>
+              <img data-portrait="bumblebee" width="96" height="96" alt="" />
+              <span class="hero-badge-label">Bumblebee <b>+3</b></span>
+            </div>
+            <div class="hero-badge" data-hero-badge="pond" hidden>
+              <img data-portrait="frog" width="96" height="96" alt="" />
+              <span class="hero-badge-label">Frog <b>+3</b></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel h2-panel" data-hero-panel data-hero-plate>
+          <p class="landing-kicker">A cosy nature game</p>
           <h1>Pocket Reserve</h1>
           <p class="hero-lede">Your own little nature reserve, floating in the sky. Plant it tile by tile until frogs, kingfishers and otters move in.</p>
 
@@ -112,6 +147,8 @@
               </span>
             </a>
 
+            <p class="save-note">It's free, with no sign-up. Your island saves in this browser as you play.</p>
+
             <div class="menu" data-returning-only data-menu>
               <a class="btn btn-ghost" data-menu-chapters href="play.html#chapters">Chapters</a>
               <a class="btn btn-ghost" data-menu-reserve href="play.html#reserve" hidden>Free play</a>
@@ -122,8 +159,6 @@
               </div>
             </div>
 
-            <p class="save-note">It's free, with no sign-up. Your island saves in this browser as you play.</p>
-            <p class="trust-line">For ages 7 to 10. No adverts, no purchases, no account, and nothing is collected.</p>
             <button class="link-btn" type="button" data-first-only data-menu-load>Load an island from a file</button>
           </div>
 
@@ -136,45 +171,41 @@
           <input class="file-input" type="file" accept=".json,application/json" tabindex="-1" aria-hidden="true" data-file-input />
         </div>
 
-        <section class="how-strip" aria-labelledby="how-title">
-          <h2 class="sr-only" id="how-title">How to play</h2>
-          <ol class="steps" data-steps>
-            <li class="h2-panel">
-              <span class="step-copy"><strong>Plant</strong><span>You start on almost bare rock with eight seeds and a hand of cards: meadow, flowers, hedge, pond and reeds. Each seed plants one card on one tile.</span></span>
-            </li>
-            <li class="h2-panel">
-              <span class="step-copy"><strong>Invite</strong><span>Your Wildlife list shows which animals have a home ready. Pick one, then tap the tile it will live on. First up: an earthworm and a bumblebee!</span></span>
-            </li>
-            <li class="h2-panel">
-              <span class="step-copy"><strong>Connect</strong><span>Chapter by chapter, you join your island up: meadow next to meadow so the wind can’t blow it away, reeds next to water, and trout in the pond so a kingfisher comes to fish.</span></span>
-            </li>
-          </ol>
-        </section>
+        <div class="hero-play">
+          <p class="hero-hint" data-hero-hint aria-live="polite" aria-atomic="true">Pick one of your three cards to plant it.</p>
+          <div class="hero-hand h2-panel" data-hero-hand role="group" aria-label="Three cards to plant">
+            <button class="hero-card" type="button" data-hero-card="tussocks" data-animal="Earthworm">
+              <img src="./assets/ui/habitats/cards/tussocks.jpg" width="240" height="192" alt="" />
+              <span class="hero-card-name">Meadow tussocks</span><span data-card-status>Tap to plant</span>
+            </button>
+            <button class="hero-card" type="button" data-hero-card="nectar" data-animal="Bumblebee">
+              <img src="./assets/ui/habitats/cards/nectar.jpg" width="240" height="192" alt="" />
+              <span class="hero-card-name">Nectar border</span><span data-card-status>Tap to plant</span>
+            </button>
+            <button class="hero-card" type="button" data-hero-card="pond" data-animal="Frog">
+              <img src="./assets/ui/habitats/cards/pond.jpg" width="240" height="192" alt="" />
+              <span class="hero-card-name">Wildlife pond</span><span data-card-status>Tap to plant</span>
+            </button>
+          </div>
+          <button class="link-btn" type="button" data-first-only data-menu-load>Load an island from a file</button>
+        </div>
       </section>
 
       <div class="a2hs-slot home-screen-slot" data-a2hs hidden></div>
 
-      <section class="landing-demo h2-panel" data-landing-demo aria-labelledby="demo-title">
-        <h2 id="demo-title">Try it: plant your first tiles</h2>
-        <div class="demo-seeds">
-          <span data-demo-seeds>3 seeds</span>
-          <span class="seed-pip" aria-hidden="true"></span>
-          <span class="seed-pip" aria-hidden="true"></span>
-          <span class="seed-pip" aria-hidden="true"></span>
-        </div>
-        <div class="demo-hand" role="group" aria-label="Pick a card">
-          <button class="demo-card" type="button" data-demo-card="meadow" aria-pressed="false"><span class="demo-swatch" aria-hidden="true"></span>Meadow</button>
-          <button class="demo-card" type="button" data-demo-card="flowers" aria-pressed="false"><span class="demo-swatch" aria-hidden="true"></span>Flowers</button>
-        </div>
-        <div class="demo-island" role="group" aria-label="Five island tiles">
-          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 1: bare rock"><span aria-hidden="true">1</span></button>
-          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 2: bare rock"><span aria-hidden="true">2</span></button>
-          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 3: bare rock"><span aria-hidden="true">3</span></button>
-          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 4: bare rock"><span aria-hidden="true">4</span></button>
-          <button type="button" data-demo-tile data-state="rock" aria-label="Tile 5: bare rock"><span aria-hidden="true">5</span></button>
-        </div>
-        <p class="demo-live" aria-live="polite" aria-atomic="true">Pick a card, then tap a tile.</p>
-        <button class="link-btn demo-reset" type="button" data-demo-reset hidden>Start again</button>
+      <section class="how-strip" aria-labelledby="how-title">
+        <h2 class="sr-only" id="how-title">How to play</h2>
+        <ol class="steps" data-steps>
+          <li class="h2-panel">
+            <span class="step-copy"><strong>Plant</strong><span>You start on almost bare rock with eight seeds and a hand of cards: meadow, flowers, hedge, pond and reeds. Each seed plants one card on one tile.</span></span>
+          </li>
+          <li class="h2-panel">
+            <span class="step-copy"><strong>Invite</strong><span>Your Wildlife list shows which animals have a home ready. Pick one, then tap the tile it will live on. First up: an earthworm and a bumblebee!</span></span>
+          </li>
+          <li class="h2-panel">
+            <span class="step-copy"><strong>Connect</strong><span>Chapter by chapter, you join your island up: meadow next to meadow so the wind can’t blow it away, reeds next to water, and trout in the pond so a kingfisher comes to fish.</span></span>
+          </li>
+        </ol>
       </section>
 
       <section class="seed-line h2-panel" aria-labelledby="seed-line-title">
@@ -256,16 +287,12 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-by">
-          <span>A nature game made with love by</span>
-          <a href="https://www.youtube.com/@TheNaturalistAtlas" rel="noopener">The Naturalist Atlas</a>
-        </p>
         <p class="footer-eco">Every animal’s home is based on real nature from Europe’s rainy north-west.</p>
         <p class="footer-save">Your island stays in this browser and is never sent anywhere. Use Save to file to keep a copy.</p>
         <ul class="footer-links">
           <li><a href="./THIRD-PARTY-NOTICES.txt">Credits and licences</a></li>
           <li data-feedback-item hidden><a data-feedback href="https://x.com/PocketReserve" target="_blank" rel="noopener noreferrer">Send feedback</a></li>
-          <li class="footer-build" data-build="2026-11-12 c88e63d"></li>
+          <li class="footer-build" data-build="2026-11-13 7038773"></li>
         </ul>
       </div>
     </footer>
